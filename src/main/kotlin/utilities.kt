@@ -194,20 +194,17 @@ fun validarZonaEscollida(pMessageError: String, zonaEscollida:Int) : Boolean{
  * This method can be used to read an Int value from the user through keyboard using java.util.Scanner
  * @author raimon.izard
  * @since 15/12/2023
- * @param pMessageIn Input message to be shown to the user
  * @param pMessageErrorDT Data type error message to be shown to the user
  * @return outputValue Output value
  */
 
-fun readInt(pMessageIn: String
-            , pMessageErrorDT: String
+fun readInt(pMessageErrorDT: String
 ): Int{
 
     var outputValue: Int = 0
     var correctDataType: Boolean = false
 
     do{
-        println(pMessageIn)
         correctDataType = scan.hasNextInt()
 
         if (!correctDataType){
@@ -225,15 +222,13 @@ fun readInt(pMessageIn: String
  * This method can be used to read an Int value from the user through keyboard using java.util.Scanner in within a range
  * @author raimon.izard
  * @since 15/12/2023
- * @param pMessageIn Input message to be shown to the user
  * @param pMessageErrorDT Data type error message to be shown to the user
  * @param pMessageErrorDV Data value error message to be shown to the user
  * @param pMin Min accepted value
  * @param pMax Max accepted value
  * @return outputValue Output value
  */
-fun readInt(pMessageIn: String
-            , pMessageErrorDT: String
+fun readInt(pMessageErrorDT: String
             , pMessageErrorDV: String
             , pMin: Int
             , pMax: Int
@@ -243,7 +238,6 @@ fun readInt(pMessageIn: String
     var correctDataType: Boolean = false
 
     do{
-        println(pMessageIn)
         correctDataType = scan.hasNextInt()
 
         if (!correctDataType){

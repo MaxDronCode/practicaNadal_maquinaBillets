@@ -4,14 +4,9 @@ fun main() {
     var flag = true
     do{
         do {
-            var bitlletEscollit:Int
-            do {
 
-                menuBitllets()
-                bitlletEscollit = llegirInt()
-                var validacioBitllet = validarBitlletEscollit("Número introduit erroni", bitlletEscollit)
-
-            }while (!validacioBitllet)
+            menuBitllets()
+            var bitlletEscollit = readInt("Introdueixi un numero siusplau.", "Introdueixi un número del 1 al 5 siusplau.", 1, 5)
 
             var zonaEscollida:Int
             do {
