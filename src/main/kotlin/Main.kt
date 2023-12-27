@@ -8,14 +8,10 @@ fun main() {
             menuBitllets()
             var bitlletEscollit = readInt("Introdueixi un numero siusplau.", "Introdueixi un número del 1 al 5 siusplau.", 1, 5)
 
-            var zonaEscollida:Int
-            do {
 
-                menuZona()
-                zonaEscollida = llegirInt()
-                var validacioZona = validarZonaEscollida("Número de zona erroni", zonaEscollida)
+            menuZona()
+            var zonaEscollida = readInt("Introdueixi un numero siusplau.", "Introdueixi un número del 1 al 5 siusplau.", 1 , 3)
 
-            }while (!validacioZona)
 
             var bitlletFinal = tarjetaEscollida(bitlletEscollit,zonaEscollida)
 
