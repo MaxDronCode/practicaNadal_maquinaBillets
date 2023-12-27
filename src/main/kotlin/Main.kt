@@ -1,7 +1,19 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+    var bitllets = 0
+    var flag = true
+    do{
+        do {
+            menuBitllets()
+            var bittletEscollit = llegirInt()
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+            menuZona()
+            var zonaEscollida = llegirInt()
+
+            var bitlletFinal = tarjetaEscollida(bittletEscollit,zonaEscollida)
+
+            println("Ha escollit la opcio: $bitlletFinal")
+            bitllets++
+        }while(flag || bitllets<3)
+    }while(true)
+
 }
