@@ -20,6 +20,7 @@ fun menuZona(){
 
 fun tarjetaEscollida(bittlet: Int, zona: Int) :String {
     var resultat = ""
+
     when(bittlet){
         1 -> resultat += "Bitllet senzill, "
         2 -> resultat += "TCasual, "
@@ -27,6 +28,7 @@ fun tarjetaEscollida(bittlet: Int, zona: Int) :String {
         4 -> resultat += "TFamiliar, "
         5 -> resultat += "TJove, "
     }
+
     when (zona){
         1 -> resultat+="zona1"
         2 -> resultat+="zona2"

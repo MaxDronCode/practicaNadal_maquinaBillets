@@ -26,9 +26,9 @@ fun main() {
 
             println("Vol seguir comprant? (S/N)")
 
-            var seguirComprant = readChar("Introdueixi un caracter (s/n)")
+            var seguirComprant = readYesNo("Introdueixi un caracter (S/N)","Introdueix una -S o una -N", 'S', 'N')
 
-            if (seguirComprant == 's') comprarMesBitllets = true
+            println(seguirComprant)
 
         }while(comprarMesBitllets && bitllets<3)
         println("adeu")

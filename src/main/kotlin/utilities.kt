@@ -222,6 +222,54 @@ fun readInt(pMessageErrorDT: String
 }
 
 /**
+ * Esta funcion lee por teclado y valida que la entrada de teclado es solamente un caracter y que ademas es una letra, no un numero o un caracter especial.
+ * @author: Max Dron, Hugo Alonso
+ * @since: 27/12/2023
+ * @param pMessageErrorDT:Mensaje de error en caso de entrada erronea de tipo de dato.
+ * @param pMessageErrorDV: Mensaje de error en caso de entrada erronea de valor de dato.
+ * @param yes: caracter esperado 1
+ * @param no: caracter esperado 2
+ * @return lo que devuelve esta funcion es el caracter ya comprobado y validado.
+ */
+fun readYesNo(pMessageErrorDT: String
+            , pMessageErrorDV: String
+            , yes: Char
+            , no: Char): Char{
+
+    var input:String
+    var lletra:Char = '*'
+    var correctDataType: Boolean = false
+
+    do{
+        input = scan.next().uppercase()
+
+        if (input.length>1){
+            println(YELLOW_BOLD_BRIGHT + "WARNING: " + pMessageErrorDV + RESET)
+            correctDataType = false
+        }else{
+            lletra = input.single()
+            if (!lletra.isLetter()){
+                println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            }else{
+
+                if (lletra != yes && lletra != no){
+                    println(YELLOW_BOLD_BRIGHT + "WARNING: " + pMessageErrorDV + RESET)
+                    correctDataType = false
+                }else{
+                    correctDataType = true
+                }
+            }
+        }
+
+
+        scan.nextLine()
+    }while(!correctDataType)
+
+    return lletra
+}
+
+
+/**
  * This method can be used to read a Float value from the user through keyboard using java.util.Scanner
  * @author raimon.izard
  * @since 15/12/2023
