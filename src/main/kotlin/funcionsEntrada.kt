@@ -57,3 +57,32 @@ fun llegirLong(): Long {
     }while(!bool)
     return result
 }
+
+/**
+ * Funció que llegeix un Double (diners que introdueix l'usuari en la màquina) i mira si son diners de curs legal
+ * @author Max Dron
+ * @since 27/12/23
+ * @param pMessageErrorDT Missatge que es mostra a l'usuari per pantalla en cas de que introdueixi un tipus de dades erroni
+ * @param pMessageErrorDV Missatge que es mostra a l'usuari per pantalla en cas de que introdueixi un valor incorrecte
+ * @return Es retorna l'import introduit en la maquina sabent que es correcte
+ */
+fun llegirDinersDeCursLegal(pMessageErrorDT:String, pMessageErrorDV:String):Double{
+    var outputValue:Double = 0.0
+    var correctDataType:Boolean = false
+    var dinersDeCursLegal = arrayOf(0.05, 0.10, 0.20, 0.50, 1.00, 2.00, 5.00, 10.00, 20.00, 50.00)
+    do {
+        correctDataType = scan.hasNextDouble()
+        if (!correctDataType){
+            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+        }else{
+            outputValue = scan.nextDouble()
+
+            if (outputValue !in dinersDeCursLegal){
+                println(YELLOW_BOLD_BRIGHT + "WARNING: " + pMessageErrorDV + RESET)
+                correctDataType = false
+            }
+        }
+        scan.nextLine()
+    }while (!correctDataType)
+    return outputValue
+}

@@ -9,11 +9,9 @@ fun main() {
     do{
         flag = false
         bitllets=0
-        num++
         var bitlletsArray=arrayListOf<String>()
         while(bitllets<3 && !flag) {
 
-            println("Esto es el intento numero $num de comprar billetes")
             menuBitllets()
             var bitlletEscollit = readInt("Introdueixi un numero siusplau.", "Introdueixi un número del 1 al 5 siusplau.", 1, 5)
 
@@ -28,24 +26,34 @@ fun main() {
             var preuBitllet = calculaPreuBitllet(bitlletEscollit, zonaEscollida)
 
             preuBitlletsAcomulats += preuBitllet
+            preuBitlletsAcomulats = redondearADosDecimales(preuBitlletsAcomulats)
 
             println("El preu del bitllet es: $preuBitllet€")
-            preuBitlletsAcomulats = redondearADosDecimales(preuBitlletsAcomulats)
-            if (bitllets<2){
+
+
+            bitlletsArray.add("$bitlletFinal - Preu: $preuBitllet")
+            bitllets++
+
+            if (bitllets<3){
                 println("Vol seguir comprant? (S/N)")
 
                 var seguirComprant = readYesNo("Introdueixi un caracter (S/N)","Introdueix una -S o una -N", 'S', 'N')
 
-                if (seguirComprant=='N') flag=true
+                if (seguirComprant=='N') {
+                    flag = true
+                    println("Has adquirit $bitllets bitllets.")
+                    println("Has de pagar $preuBitlletsAcomulats€ en total")
+
+                }
             }else{
-                println("ya no pueds comprar mas billetes")
-                println("tienes que pagar $preuBitlletsAcomulats")
+                println("Limit de compra 3 bitllets.")
+                println("Has de pagar $preuBitlletsAcomulats€")
             }
-            println("has de pagar $preuBitlletsAcomulats en total")
-            bitlletsArray.add("$bitlletFinal - Preu: $preuBitllet")
-            bitllets++
-        }
-        println("adeu")
+        } // fin bucle while, vuelve al menu billetes
+
+        println()
+
+        menuPagament(preuBitlletsAcomulats)
 
         println("Vols veure el tiquet? (S/N)")
 

@@ -45,3 +45,24 @@ fun tiquetMenu(bitlletsArray: ArrayList<String>) {
     }
     println("------------------\n")
 }
+
+fun menuPagament(preuBitllets:Double) {
+    var importAPagar:Double = preuBitllets
+    var canvi:Double = 0.0
+    do {
+
+        println("Introdueixi monedes o bitllets vàlids d'Euro.")
+        var dinersIntroduits = llegirDinersDeCursLegal("Teclegi un import vàlid siusplau.", "No es un import vàlid")
+        importAPagar -= dinersIntroduits
+        if (importAPagar > 0.0){
+            println("Ha introduit $dinersIntroduits, li resta per pagar: ${redondearADosDecimales(importAPagar)}." )
+        }else if (importAPagar == 0.0){
+            println("Ha introduit $dinersIntroduits, la operació ha sigut efectuada.")
+            println("Reculli el seu bitllet.")
+        }else{
+            canvi = importAPagar * -1
+            println("Ha introduit $dinersIntroduits, reculli el seu bitllet i el canvi: ${redondearADosDecimales(canvi)}")
+        }
+
+    }while (importAPagar > 0.0)
+}

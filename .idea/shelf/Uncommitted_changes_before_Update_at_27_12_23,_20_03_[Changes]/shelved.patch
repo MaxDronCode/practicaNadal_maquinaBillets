@@ -1,0 +1,200 @@
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"InspectionProjectProfileManager\">\n  <profile version=\"1.0\">\n    <option name=\"myName\" value=\"Project Default\" />\n    <inspection_tool class=\"ReplaceUntilWithRangeUntil\" enabled=\"true\" level=\"WEAK WARNING\" enabled_by_default=\"true\" />\n  </profile>\n</component>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+--- a/.idea/inspectionProfiles/Project_Default.xml	(revision d61cc6445cfb0bc0752e84ec1999d74d130c8eff)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1703695355510)
+@@ -2,5 +2,10 @@
+   <profile version="1.0">
+     <option name="myName" value="Project Default" />
+     <inspection_tool class="ReplaceUntilWithRangeUntil" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
++    <inspection_tool class="SpellCheckingInspection" enabled="true" level="INFORMATION" enabled_by_default="true">
++      <option name="processCode" value="true" />
++      <option name="processLiterals" value="true" />
++      <option name="processComments" value="true" />
++    </inspection_tool>
+   </profile>
+ </component>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"f2855844-3dce-4aa7-bcb1-56f1a31c86f3\" name=\"Changes\" comment=\"menuZona y menuBitllets añadido con exito\">\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/calculs.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/Main.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/Main.kt\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Kotlin File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 0\n}</component>\n  <component name=\"ProjectId\" id=\"2a7oq13ZMJRxeRRWBRFFaOYVoQz\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\hugoa\\IdeaProjects\\practicaNadal_maquinaBillets\\src\\main\\kotlin\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"f2855844-3dce-4aa7-bcb1-56f1a31c86f3\" name=\"Changes\" comment=\"\" />\n      <created>1703679167497</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1703679167497</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"menuZona y menuBitllets añadido con exito\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703679514955</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703679514955</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"menuZona y menuBitllets añadido con exito\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"menuZona y menuBitllets añadido con exito\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d61cc6445cfb0bc0752e84ec1999d74d130c8eff)
++++ b/.idea/workspace.xml	(date 1703695355550)
+@@ -4,12 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f2855844-3dce-4aa7-bcb1-56f1a31c86f3" name="Changes" comment="menuZona y menuBitllets añadido con exito">
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/calculs.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+-    </list>
++    <list default="true" id="f2855844-3dce-4aa7-bcb1-56f1a31c86f3" name="Changes" comment="ultimo push" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -29,6 +24,20 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN",
++    "assignee": "MaxDronCode"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="f621733f-4df2-47f9-80fa-43a381c262c4" />
++        <option name="url" value="https://github.com/MaxDronCode/practicaNadal_maquinaBillets.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 0
+@@ -41,19 +50,34 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "main",
++    "ignore.virus.scanning.warn.message": "true",
++    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\hugoa\IdeaProjects\practicaNadal_maquinaBillets\src\main\kotlin" />
+     </key>
++  </component>
++  <component name="RunManager">
++    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="MainKt" />
++      <module name="practicaNadal_maquinaBillets.main" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Kotlin.MainKt" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -72,11 +96,86 @@
+       <option name="project" value="LOCAL" />
+       <updated>1703679514955</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="archivo calculs.kt: se crea la funcion calculaPreuBitllet y la funcion redondearADosDecimales">
++      <option name="closed" value="true" />
++      <created>1703688658673</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1703688658673</updated>
++    </task>
++    <task id="LOCAL-00003" summary="utilities.kt: se crean funciones de validacion de datos&#10;main: se añaden funciones de validacion de datos para billete y zona">
++      <option name="closed" value="true" />
++      <created>1703690401156</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1703690401156</updated>
++    </task>
++    <task id="LOCAL-00004" summary="main: se introducen formulas del raimon">
++      <option name="closed" value="true" />
++      <created>1703691002873</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1703691002873</updated>
++    </task>
++    <task id="LOCAL-00005" summary="main: se introducen formulas del raimon">
++      <option name="closed" value="true" />
++      <created>1703691199666</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1703691199666</updated>
++    </task>
++    <task id="LOCAL-00006" summary="main: se añade bucle para seguir comprando mas billetes">
++      <option name="closed" value="true" />
++      <created>1703691419634</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1703691419634</updated>
++    </task>
++    <task id="LOCAL-00007" summary="ultimo push">
++      <option name="closed" value="true" />
++      <created>1703691847850</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1703691847850</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="menuZona y menuBitllets añadido con exito" />
+-    <option name="LAST_COMMIT_MESSAGE" value="menuZona y menuBitllets añadido con exito" />
++    <MESSAGE value="archivo calculs.kt: se crea la funcion calculaPreuBitllet y la funcion redondearADosDecimales" />
++    <MESSAGE value="utilities.kt: se crean funciones de validacion de datos&#10;main: se añaden funciones de validacion de datos para billete y zona" />
++    <MESSAGE value="main: se introducen formulas del raimon" />
++    <MESSAGE value="main: se añade bucle para seguir comprando mas billetes" />
++    <MESSAGE value="ultimo push" />
++    <option name="LAST_COMMIT_MESSAGE" value="ultimo push" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="kotlin-line">
++          <url>file://$PROJECT_DIR$/src/main/kotlin/calculs.kt</url>
++          <line>29</line>
++          <option name="timeStamp" value="1" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+ </project>
+\ No newline at end of file
