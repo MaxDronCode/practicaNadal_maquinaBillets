@@ -13,6 +13,9 @@ fun main() {
 
             println("Ha escollit la opcio: $bitlletFinal")
             bitllets++
+
+            var preuBitllet = calculaPreuBitllet(bittletEscollit, zonaEscollida)
+            println("El preu del bitllet es: $preuBitllet€")
         }while(flag || bitllets<3)
     }while(true)
 
