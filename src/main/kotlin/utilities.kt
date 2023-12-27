@@ -83,7 +83,7 @@ fun readChar(pMessageErrorDT: String
             println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             // Get the first character of the input word from scan.next()
-            outputValue = scan.next()[0]
+            outputValue = scan.next()[0].lowercaseChar()
         }
         scan.nextLine()
     }while(!correctDataType)

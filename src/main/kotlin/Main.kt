@@ -30,7 +30,8 @@ fun main() {
 
             if (seguirComprant == 's') comprarMesBitllets = true
 
-        }while(comprarMesBitllets || bitllets<3)
+        }while(comprarMesBitllets && bitllets<3)
+        println("adeu")
     }while(true)
 
 }
