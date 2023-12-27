@@ -2,6 +2,8 @@ import java.util.*
 
 val scan: Scanner = Scanner(System.`in`)
 
+
+
 /**
  * This method can be used to read a String word value from the user through keyboard using java.util.Scanner
  * @author raimon.izard
@@ -65,19 +67,16 @@ fun readSentence(pMessageIn: String
  * This method can be used to read a Char value from the user through keyboard using java.util.Scanner
  * @author raimon.izard
  * @since 15/12/2023
- * @param pMessageIn Input message to be shown to the user
  * @param pMessageErrorDT Data type error message to be shown to the user
  * @return outputValue Output value
  */
-fun readChar(pMessageIn: String
-             , pMessageErrorDT: String
+fun readChar(pMessageErrorDT: String
 ): Char{
 
     var outputValue: Char = ' '
     var correctDataType: Boolean = false
 
     do{
-        println(pMessageIn)
         correctDataType = scan.hasNext()
 
         if (!correctDataType){
@@ -154,7 +153,43 @@ fun readBoolean(pMessageIn: String
 
     return outputValue
 }
+/**
+ * @author Max Dron
+ * @since 27/12/2023
+ * @param pMessageError Missatge de error a l'usuari
+ * @param bitlletEscollit Número de bitllet que escull l'usuari
+ * @return Retorna un booleà que indica si el valor introduit esta en el rang que pertoca
+ */
+fun validarBitlletEscollit (pMessageError: String, bitlletEscollit:Int) : Boolean {
 
+    val correctDataType: Boolean = bitlletEscollit in 1..5
+
+    return if (!correctDataType) {
+        println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageError + RESET)
+        correctDataType
+    }else{
+        correctDataType
+    }
+
+}
+
+/**
+ * @author Max Dron
+ * @since 27/12/2023
+ * @param pMessageError Error que es mostra a l'usuari quan introdueix una dada errònia
+ * @param zonaEscollida Numero de zona que ha escollit l'usuari
+ * @return Retorn un Booleà que indica si el que ha escollit l'usuari esta en el rang que pertoca
+ */
+fun validarZonaEscollida(pMessageError: String, zonaEscollida:Int) : Boolean{
+    val correctDataType: Boolean = zonaEscollida in 1..3
+
+    return if (!correctDataType) {
+        println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageError + RESET)
+        correctDataType
+    }else{
+        correctDataType
+    }
+}
 /**
  * This method can be used to read an Int value from the user through keyboard using java.util.Scanner
  * @author raimon.izard
@@ -163,6 +198,7 @@ fun readBoolean(pMessageIn: String
  * @param pMessageErrorDT Data type error message to be shown to the user
  * @return outputValue Output value
  */
+
 fun readInt(pMessageIn: String
             , pMessageErrorDT: String
 ): Int{
