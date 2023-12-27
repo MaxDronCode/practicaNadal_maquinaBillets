@@ -36,3 +36,12 @@ fun tarjetaEscollida(bittlet: Int, zona: Int) :String {
     }
     return resultat
 }
+
+
+fun tiquetMenu(bitlletsArray: ArrayList<String>) {
+    println("------TIQUET------")
+    for (i in 0..bitlletsArray.size-1){
+        println(bitlletsArray[i])
+    }
+    println("------------------\n")
+}

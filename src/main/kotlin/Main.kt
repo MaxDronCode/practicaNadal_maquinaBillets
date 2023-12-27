@@ -2,12 +2,13 @@ fun main() {
     var bitllets:Int
     var preuBitlletsAcomulats = 0.0
     var flag:Boolean
-    var bitlletsArray=arrayListOf<String>()
+
     var num = 0
     do{
         flag = false
         bitllets=1
         num++
+        var bitlletsArray=arrayListOf<String>()
         while(bitllets<3 && !flag) {
 
             println("Esto es el intento numero $num de comprar billetes")
@@ -43,10 +44,11 @@ fun main() {
         }
         println("adeu")
 
-        println("------TIQUET------")
-        for (i in 0..bitlletsArray.size-1){
-            println(bitlletsArray[i])
-        }
-        println("------------------\n")
+        println("Vols veure el tiquet? (S/N)")
+
+        var veureTiquet = readYesNo("Introdueixi un caracter (S/N)","Introdueix una -S o una -N", 'S', 'N')
+
+        if (veureTiquet=='S') tiquetMenu(bitlletsArray)
+
     }while(true)
 }
