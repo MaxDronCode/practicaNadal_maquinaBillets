@@ -1,0 +1,104 @@
+Index: src/main/kotlin/Main.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>fun main() {\r\n    var bitllets = 0\r\n    var flag = true\r\n    do{\r\n        do {\r\n            menuBitllets()\r\n            var bittletEscollit = llegirInt()\r\n\r\n            menuZona()\r\n            var zonaEscollida = llegirInt()\r\n\r\n            var bitlletFinal = tarjetaEscollida(bittletEscollit,zonaEscollida)\r\n\r\n            println(\"Ha escollit la opcio: $bitlletFinal\")\r\n            bitllets++\r\n        }while(flag || bitllets<3)\r\n    }while(true)\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/Main.kt b/src/main/kotlin/Main.kt
+--- a/src/main/kotlin/Main.kt	(revision b11da08e3e7eaf006bfdb5a5749c2a3bdc1c848b)
++++ b/src/main/kotlin/Main.kt	(date 1703690235618)
+@@ -2,7 +2,7 @@
+     var bitllets = 0
+     var flag = true
+     do{
+-        do {
++        if(bitllets==3) flag=false
+             menuBitllets()
+             var bittletEscollit = llegirInt()
+ 
+@@ -12,8 +12,7 @@
+             var bitlletFinal = tarjetaEscollida(bittletEscollit,zonaEscollida)
+ 
+             println("Ha escollit la opcio: $bitlletFinal")
++
+             bitllets++
+-        }while(flag || bitllets<3)
+-    }while(true)
+-
++    }while(flag )
+ }
+\ No newline at end of file
+Index: src/main/kotlin/menus.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>fun menuBitllets(){\r\n    println(\"-----------------------------\")\r\n    println(\"Quin bitllet desitja adquirir?\\n\" +\r\n            \"1 - Bitllet senzill\\n\" +\r\n            \"2 - TCasual\\n\" +\r\n            \"3 - TUsual\\n\" +\r\n            \"4 - TFamiliar\\n\" +\r\n            \"5 - TJove\")\r\n    println(\"-----------------------------\")\r\n}\r\n\r\nfun menuZona(){\r\n    println(\"-----------------------------\")\r\n    println(\"Quina zona vol viatjar?\\n\" +\r\n            \"- Zona 1\\n\" +\r\n            \"- Zona 2\\n\" +\r\n            \"- Zona 3\")\r\n    println(\"-----------------------------\")\r\n}\r\n\r\nfun tarjetaEscollida(bittlet: Int, zona: Int) :String {\r\n    var resultat = \"\"\r\n    when(bittlet){\r\n        1 -> resultat += \"Bitllet senzill, \"\r\n        2 -> resultat += \"TCasual, \"\r\n        3 -> resultat += \"TUsual, \"\r\n        4 -> resultat += \"TFamiliar, \"\r\n        5 -> resultat += \"TJove, \"\r\n    }\r\n    when (zona){\r\n        1 -> resultat+=\"zona1\"\r\n        2 -> resultat+=\"zona2\"\r\n        3 -> resultat+=\"zona3\"\r\n    }\r\n    return resultat\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/menus.kt b/src/main/kotlin/menus.kt
+--- a/src/main/kotlin/menus.kt	(revision b11da08e3e7eaf006bfdb5a5749c2a3bdc1c848b)
++++ b/src/main/kotlin/menus.kt	(date 1703681702454)
+@@ -20,6 +20,7 @@
+ 
+ fun tarjetaEscollida(bittlet: Int, zona: Int) :String {
+     var resultat = ""
++
+     when(bittlet){
+         1 -> resultat += "Bitllet senzill, "
+         2 -> resultat += "TCasual, "
+@@ -27,6 +28,7 @@
+         4 -> resultat += "TFamiliar, "
+         5 -> resultat += "TJove, "
+     }
++
+     when (zona){
+         1 -> resultat+="zona1"
+         2 -> resultat+="zona2"
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f2855844-3dce-4aa7-bcb1-56f1a31c86f3\" name=\"Changes\" comment=\"menuZona y menuBitllets añadido con exito\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/colors.kt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/funcionsEntrada.kt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/utilities.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/Main.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/Main.kt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/menus.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/menus.kt\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Kotlin File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2a7oq13ZMJRxeRRWBRFFaOYVoQz\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\hugoa\\IdeaProjects\\practicaNadal_maquinaBillets\\src\\main\\kotlin\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f2855844-3dce-4aa7-bcb1-56f1a31c86f3\" name=\"Changes\" comment=\"\" />\r\n      <created>1703679167497</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1703679167497</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"menuZona y menuBitllets añadido con exito\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703679514955</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703679514955</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"menuZona y menuBitllets añadido con exito\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"menuZona y menuBitllets añadido con exito\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b11da08e3e7eaf006bfdb5a5749c2a3bdc1c848b)
++++ b/.idea/workspace.xml	(date 1703681754747)
+@@ -4,11 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f2855844-3dce-4aa7-bcb1-56f1a31c86f3" name="Changes" comment="menuZona y menuBitllets añadido con exito">
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/colors.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/funcionsEntrada.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utilities.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    <list default="true" id="f2855844-3dce-4aa7-bcb1-56f1a31c86f3" name="Changes" comment="Actualizacion del archivo main, impresion de menus, implementacion de recogida de datos e impresion de la misma.">
+       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/kotlin/menus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/menus.kt" afterDir="false" />
+     </list>
+@@ -74,11 +70,20 @@
+       <option name="project" value="LOCAL" />
+       <updated>1703679514955</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Actualizacion del archivo main, impresion de menus, implementacion de recogida de datos e impresion de la misma.">
++      <option name="closed" value="true" />
++      <created>1703681486077</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1703681486077</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="menuZona y menuBitllets añadido con exito" />
+-    <option name="LAST_COMMIT_MESSAGE" value="menuZona y menuBitllets añadido con exito" />
++    <MESSAGE value="Actualizacion del archivo main, impresion de menus, implementacion de recogida de datos e impresion de la misma." />
++    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion del archivo main, impresion de menus, implementacion de recogida de datos e impresion de la misma." />
+   </component>
+ </project>
+\ No newline at end of file
