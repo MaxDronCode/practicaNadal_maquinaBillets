@@ -1,3 +1,5 @@
+import javax.print.attribute.standard.PrinterInfo
+
 fun main() {
     var bitllets:Int
     var preuBitlletsAcomulats = 0.0
@@ -6,7 +8,7 @@ fun main() {
     var num = 0
     do{
         flag = false
-        bitllets=1
+        bitllets=0
         num++
         var bitlletsArray=arrayListOf<String>()
         while(bitllets<3 && !flag) {
@@ -28,8 +30,8 @@ fun main() {
             preuBitlletsAcomulats += preuBitllet
 
             println("El preu del bitllet es: $preuBitllet€")
-
-            if (bitllets<3){
+            preuBitlletsAcomulats = redondearADosDecimales(preuBitlletsAcomulats)
+            if (bitllets<2){
                 println("Vol seguir comprant? (S/N)")
 
                 var seguirComprant = readYesNo("Introdueixi un caracter (S/N)","Introdueix una -S o una -N", 'S', 'N')
@@ -39,6 +41,7 @@ fun main() {
                 println("ya no pueds comprar mas billetes")
                 println("tienes que pagar $preuBitlletsAcomulats")
             }
+            println("has de pagar $preuBitlletsAcomulats en total")
             bitlletsArray.add("$bitlletFinal - Preu: $preuBitllet")
             bitllets++
         }
