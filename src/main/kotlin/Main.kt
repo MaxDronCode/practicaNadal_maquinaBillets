@@ -1,7 +1,7 @@
 fun main() {
     var bitllets = 0
     var preuBitlletsAcomulats = 0.0
-    var flag = true
+    var comprarMesBitllets = false
     do{
         do {
 
@@ -26,7 +26,11 @@ fun main() {
 
             println("Vol seguir comprant? (S/N)")
 
-        }while(flag || bitllets<3)
+            var seguirComprant = readChar("Introdueixi un caracter (s/n)")
+
+            if (seguirComprant == 's') comprarMesBitllets = true
+
+        }while(comprarMesBitllets || bitllets<3)
     }while(true)
 
 }
