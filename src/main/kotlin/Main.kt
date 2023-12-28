@@ -8,6 +8,15 @@ fun main() {
     var bitllets:Int
     var preuBitlletsAcomulats:Double
     var flag:Boolean
+    println("Aixo es una maquina de venda de tiquets de tren!!\n" +
+            "      __        __________\n" +
+            "     /  \\         ========   _____________\n" +
+            "      ||          =      =  /           ]\n" +
+            "  ___==============      = /            ]\n" +
+            "  \\_[            ========= [            ]\n" +
+            "    [=====================^==============\n" +
+            "___//_(_)_(_)_(_)___\\__/_____(_)_(_)_(_)\n" +
+            "========================================")
 
     var num = 0
     do{
