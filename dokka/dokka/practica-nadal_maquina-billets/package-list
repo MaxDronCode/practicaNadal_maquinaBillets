@@ -1,0 +1,34 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/practica-nadal_maquina-billets/[root]/index.html
+$dokka.location:/CalculsKt///PointingToDeclaration/practica-nadal_maquina-billets/[root]/-calculs-kt/index.html
+$dokka.location:/CalculsKt/calculaPreuBitllet/#kotlin.Int#kotlin.Int/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-calculs-kt/calcula-preu-bitllet.html
+$dokka.location:/CalculsKt/redondearADosDecimales/#kotlin.Double/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-calculs-kt/redondear-a-dos-decimales.html
+$dokka.location:/ColorsKt///PointingToDeclaration/practica-nadal_maquina-billets/[root]/-colors-kt/index.html
+$dokka.location:/FuncionsEntradaKt///PointingToDeclaration/practica-nadal_maquina-billets/[root]/-funcions-entrada-kt/index.html
+$dokka.location:/FuncionsEntradaKt/llegirDinersDeCursLegal/#kotlin.String#kotlin.String/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-funcions-entrada-kt/llegir-diners-de-curs-legal.html
+$dokka.location:/FuncionsEntradaKt/llegirDouble/#/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-funcions-entrada-kt/llegir-double.html
+$dokka.location:/FuncionsEntradaKt/llegirInt/#/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-funcions-entrada-kt/llegir-int.html
+$dokka.location:/FuncionsEntradaKt/llegirLong/#/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-funcions-entrada-kt/llegir-long.html
+$dokka.location:/MainKt///PointingToDeclaration/practica-nadal_maquina-billets/[root]/-main-kt/index.html
+$dokka.location:/MainKt/main/#/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-main-kt/main.html
+$dokka.location:/MenusKt///PointingToDeclaration/practica-nadal_maquina-billets/[root]/-menus-kt/index.html
+$dokka.location:/MenusKt/menuBitllets/#/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-menus-kt/menu-bitllets.html
+$dokka.location:/MenusKt/menuPagament/#kotlin.Double/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-menus-kt/menu-pagament.html
+$dokka.location:/MenusKt/menuZona/#/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-menus-kt/menu-zona.html
+$dokka.location:/MenusKt/tarjetaEscollida/#kotlin.Int#kotlin.Int/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-menus-kt/tarjeta-escollida.html
+$dokka.location:/MenusKt/tiquetMenu/#java.util.ArrayList[kotlin.String]/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-menus-kt/tiquet-menu.html
+$dokka.location:/UtilitiesKt///PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/index.html
+$dokka.location:/UtilitiesKt/getScan/#/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/get-scan.html
+$dokka.location:/UtilitiesKt/readBoolean/#kotlin.String#kotlin.String/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-boolean.html
+$dokka.location:/UtilitiesKt/readChar/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-char.html
+$dokka.location:/UtilitiesKt/readChar/#kotlin.String/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-char.html
+$dokka.location:/UtilitiesKt/readFloat/#kotlin.String#kotlin.String#kotlin.String#kotlin.Float#kotlin.Float/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-float.html
+$dokka.location:/UtilitiesKt/readFloat/#kotlin.String#kotlin.String/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-float.html
+$dokka.location:/UtilitiesKt/readInt/#kotlin.String#kotlin.String#kotlin.Int#kotlin.Int/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-int.html
+$dokka.location:/UtilitiesKt/readInt/#kotlin.String/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-int.html
+$dokka.location:/UtilitiesKt/readSentence/#kotlin.String#kotlin.String/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-sentence.html
+$dokka.location:/UtilitiesKt/readWord/#kotlin.String#kotlin.String/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-word.html
+$dokka.location:/UtilitiesKt/readYesNo/#kotlin.String#kotlin.String#kotlin.Char#kotlin.Char/PointingToDeclaration/practica-nadal_maquina-billets/[root]/-utilities-kt/read-yes-no.html
+
+
