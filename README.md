@@ -55,11 +55,11 @@ Executa el projecte i segueix les instruccions que apareixen a la pantalla.
 
 No t'amoïnis si introdueixes les dades de manera incorrecta; l'aplicació ja té tot previst per a això.
 
-<img src="images/executionErrors.png" alt="CodeImage3" width="600"/>
+<img src="images/execucio2.png" alt="CodeImage3" width="600"/>
 
 Finalment, obtindràs el resultat de la funció basat en les entrades que has proporcionat a l'aplicació.
 
-<img src="images/execution.png" alt="CodeImage3" width="600"/>
+<img src="images/execucio3.png" alt="CodeImage4" width="600"/>
 
 
 ---
