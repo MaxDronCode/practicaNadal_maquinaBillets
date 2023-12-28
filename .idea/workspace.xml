@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2855844-3dce-4aa7-bcb1-56f1a31c86f3" name="Changes" comment="menus.kt: se añade menuPagament.&#10;calculs.kt: se añaden comentarios a las funciones&#10;funcionsEntrada.kt: se añade funcion llegirDinersDeCursLegal.&#10;main: varios retoques y actualizaciones">
+    <list default="true" id="f2855844-3dce-4aa7-bcb1-56f1a31c86f3" name="Changes" comment="se añade la carpeta images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/menus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/menus.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -119,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703707261544</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="se añade la carpeta images">
+      <option name="closed" value="true" />
+      <created>1703759317053</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703759317053</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -128,6 +141,7 @@
     <MESSAGE value="main.kt: impresio de tiquet de compra al deixar de comprar bitllets" />
     <MESSAGE value="main.kt, menu.kt: funcio per veure tiquets implementada" />
     <MESSAGE value="menus.kt: se añade menuPagament.&#10;calculs.kt: se añaden comentarios a las funciones&#10;funcionsEntrada.kt: se añade funcion llegirDinersDeCursLegal.&#10;main: varios retoques y actualizaciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="menus.kt: se añade menuPagament.&#10;calculs.kt: se añaden comentarios a las funciones&#10;funcionsEntrada.kt: se añade funcion llegirDinersDeCursLegal.&#10;main: varios retoques y actualizaciones" />
+    <MESSAGE value="se añade la carpeta images" />
+    <option name="LAST_COMMIT_MESSAGE" value="se añade la carpeta images" />
   </component>
 </project>

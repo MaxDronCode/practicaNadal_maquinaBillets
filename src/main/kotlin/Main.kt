@@ -25,7 +25,7 @@ fun main() {
 
             var bitlletFinal = tarjetaEscollida(bitlletEscollit,zonaEscollida)
 
-            println("Ha escollit la opcio: $bitlletFinal")
+            println(GREEN_BOLD + "Ha escollit la opcio: $YELLOW_BOLD $bitlletFinal" + RESET)
 
 
             var preuBitllet = calculaPreuBitllet(bitlletEscollit, zonaEscollida)
@@ -36,18 +36,18 @@ fun main() {
             println("El preu del bitllet es: $preuBitllet€")
 
 
-            bitlletsArray.add("$bitlletFinal - Preu: $preuBitllet")
+            bitlletsArray.add("$bitlletFinal - Preu: " + YELLOW_BOLD + preuBitllet + RESET)
             bitllets++
 
             if (bitllets<3){
-                println("Vol seguir comprant? (S/N)")
+                println("Vol seguir comprant? $YELLOW_BOLD (S/N)" + RESET)
 
                 var seguirComprant = readYesNo("Introdueixi un caracter (S/N)","Introdueix una -S o una -N", 'S', 'N')
 
                 if (seguirComprant=='N') {
                     flag = true
-                    println("Has adquirit $bitllets bitllets.")
-                    println("Has de pagar $preuBitlletsAcomulats€ en total")
+                    println(YELLOW_BOLD + "Has adquirit $bitllets bitllets.")
+                    println("Has de pagar $preuBitlletsAcomulats€ en total" + RESET)
 
                 }
             }else{

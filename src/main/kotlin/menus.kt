@@ -4,7 +4,7 @@
  */
 fun menuBitllets(){
     println("-----------------------------")
-    println("Quin bitllet desitja adquirir?\n" +
+    println(GREEN_BOLD + "Quin bitllet desitja adquirir?\n"  + RESET +
             "1 - Bitllet senzill\n" +
             "2 - TCasual\n" +
             "3 - TUsual\n" +
@@ -19,7 +19,7 @@ fun menuBitllets(){
  */
 fun menuZona(){
     println("-----------------------------")
-    println("Quina zona vol viatjar?\n" +
+    println(GREEN_BOLD + "Quina zona vol viatjar?\n" + RESET +
             "- Zona 1\n" +
             "- Zona 2\n" +
             "- Zona 3")
@@ -57,11 +57,11 @@ fun tarjetaEscollida(bitllet: Int, zona: Int) :String {
  * @param bitlletsArray Es un array amb els diferents bitllets amb zones que has escollit.
  */
 fun tiquetMenu(bitlletsArray: ArrayList<String>) {
-    println("------TIQUET------")
+    println(GREEN_BOLD + "------TIQUET------" + RESET)
     for (i in 0..bitlletsArray.size-1){
         println(bitlletsArray[i])
     }
-    println("------------------\n")
+    println(GREEN_BOLD + "------------------\n" + RESET)
 }
 
 /**
@@ -77,13 +77,13 @@ fun menuPagament(preuBitllets:Double) {
         var dinersIntroduits = llegirDinersDeCursLegal("Teclegi un import vàlid siusplau.", "No es un import vàlid")
         importAPagar -= dinersIntroduits
         if (importAPagar > 0.0){
-            println("Ha introduit $dinersIntroduits, li resta per pagar: ${redondearADosDecimales(importAPagar)}." )
+            println(YELLOW_BOLD + "Ha introduit $dinersIntroduits, li resta per pagar: ${redondearADosDecimales(importAPagar)}." + RESET )
         }else if (importAPagar == 0.0){
-            println("Ha introduit $dinersIntroduits, la operació ha sigut efectuada.")
-            println("Reculli el seu bitllet.")
+            println(YELLOW_BOLD + "Ha introduit $dinersIntroduits, la operació ha sigut efectuada." + RESET)
+            println( GREEN_BOLD + "Reculli el seu bitllet." + RESET)
         }else{
             canvi = importAPagar * -1
-            println("Ha introduit $dinersIntroduits, reculli el seu bitllet i el canvi: ${redondearADosDecimales(canvi)}")
+            println(GREEN_BOLD + "Ha introduit $dinersIntroduits, reculli el seu bitllet i el canvi: ${redondearADosDecimales(canvi)}" + RESET)
         }
 
     }while (importAPagar > 0.0)
