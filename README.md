@@ -51,7 +51,7 @@ Abans de començar, assegura't de tenir el següent instal·lat al teu ordinador
 
 Executa el projecte i segueix les instruccions que apareixen a la pantalla.
 
-<img src="images/execucio.png" alt="CodeImage3" width="600"/>
+<img src="images/execucio.png" alt="CodeImage2" width="600"/>
 
 No t'amoïnis si introdueixes les dades de manera incorrecta; l'aplicació ja té tot previst per a això.
 
