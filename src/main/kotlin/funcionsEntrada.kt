@@ -1,9 +1,5 @@
 import java.util.*
 /**
- * Es un scanner.
- * */
-
-/**
  * Esta funcion, como su propio nombre indica, lee valores int
  * y, hasta que no has introducido un valor int, no devuelve
  * ningun valor.

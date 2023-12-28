@@ -1,14 +1,19 @@
 import javax.print.attribute.standard.PrinterInfo
-
+/**
+* Esta funcion main controla el programa. Desde esta funcion se llama a las demas,
+ * principalmente a las funciones de menu para las impresiones de pantalla i comprovacion de datos.
+ * @author Max Dron i Hugo Alonso
+* */
 fun main() {
     var bitllets:Int
-    var preuBitlletsAcomulats = 0.0
+    var preuBitlletsAcomulats:Double
     var flag:Boolean
 
     var num = 0
     do{
         flag = false
         bitllets=0
+        preuBitlletsAcomulats = 0.0
         var bitlletsArray=arrayListOf<String>()
         while(bitllets<3 && !flag) {
 
