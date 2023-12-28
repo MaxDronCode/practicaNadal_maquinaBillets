@@ -1,4 +1,5 @@
 # Projecte Màquina de Bitllets
+Projecte dut a terme per Hugo Alonso y Max Dron
 
 # Visió general
 Màquina de bitllets és un projecte dins de l'àmbit educatiu, amb un enfocament en la programació modular i la bona documentació del codi. No obstant això, el seu principal objectiu és fomentar la col·laboració, utilitzant Git i GitHub per permetre que diverses persones treballin de manera conjunta en el mateix projecte.
