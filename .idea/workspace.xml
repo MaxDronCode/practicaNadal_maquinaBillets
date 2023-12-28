@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2855844-3dce-4aa7-bcb1-56f1a31c86f3" name="Changes" comment="main.kt, menu.kt: funcio per veure tiquets implementada">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="f2855844-3dce-4aa7-bcb1-56f1a31c86f3" name="Changes" comment="menus.kt: se añade menuPagament.&#10;calculs.kt: se añaden comentarios a las funciones&#10;funcionsEntrada.kt: se añade funcion llegirDinersDeCursLegal.&#10;main: varios retoques y actualizaciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/calculs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/calculs.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/funcionsEntrada.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/funcionsEntrada.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/menus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/menus.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703698282154</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="menus.kt: se añade menuPagament.&#10;calculs.kt: se añaden comentarios a las funciones&#10;funcionsEntrada.kt: se añade funcion llegirDinersDeCursLegal.&#10;main: varios retoques y actualizaciones">
+      <option name="closed" value="true" />
+      <created>1703707261544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703707261544</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -124,6 +127,7 @@
     <MESSAGE value="utilities.kt: funcion de comprovar char y ya implementada" />
     <MESSAGE value="main.kt: impresio de tiquet de compra al deixar de comprar bitllets" />
     <MESSAGE value="main.kt, menu.kt: funcio per veure tiquets implementada" />
-    <option name="LAST_COMMIT_MESSAGE" value="main.kt, menu.kt: funcio per veure tiquets implementada" />
+    <MESSAGE value="menus.kt: se añade menuPagament.&#10;calculs.kt: se añaden comentarios a las funciones&#10;funcionsEntrada.kt: se añade funcion llegirDinersDeCursLegal.&#10;main: varios retoques y actualizaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="menus.kt: se añade menuPagament.&#10;calculs.kt: se añaden comentarios a las funciones&#10;funcionsEntrada.kt: se añade funcion llegirDinersDeCursLegal.&#10;main: varios retoques y actualizaciones" />
   </component>
 </project>
